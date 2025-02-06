@@ -1,0 +1,157 @@
+ */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+
+  .imageright{
+    width: 100%;
+    height: 350px;
+    background-image: url(../assets/report-1.png);
+    background-repeat: no-repeat;
+    object-fit:contain;
+    background-size: cover;
+    background-position: center;
+    border: none !important;
+    border-top-right-radius: 0px !important;
+  }
+
+  .freetrailbutton{
+    background-color: #2D8249;
+    color: white;
+    margin: 10px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .footer-container {
+    background: #6b22e5;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cta-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .cta-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .cta-form input {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 16px;
+  }
+  
+  .cta-form button {
+    background: #ff7b3e;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    text-align: left;
+  }
+  
+  .footer-about, .footer-contact {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    gap: 50px;
+    min-width: 250px;
+  }
+  
+  .column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .column ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .cta-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+
+
+
+  .mat-menu-item {
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .mat-menu-item:hover {
+    background-color: rgba(4, 45, 96, 0.1); /* Light blue hover */
+  }
+  
+  
