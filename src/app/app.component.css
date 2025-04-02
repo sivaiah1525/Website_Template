@@ -153,5 +153,15 @@ img {
   .mat-menu-item:hover {
     background-color: rgba(4, 45, 96, 0.1); /* Light blue hover */
   }
+
+  .stat-number {
+    font-weight: bold;
+  }
+  
+  .stat-text {
+    color: #6c757d;
+    font-size: 1rem;
+  }
+  
   
   

@@ -30,7 +30,7 @@
   <!-- ------  -->
   <mat-sidenav-content class="no-bg" >
     <mat-toolbar class="no-bg shadow-1">
-      <mat-toolbar-row class="d-flex ">
+      <mat-toolbar-row class="d-flex mb-4" style="box-shadow: 10px;">
         <div  style="width: 70%;">
           <div style="display: flex;">
             <div >
@@ -45,16 +45,16 @@
               </div>
               <mat-menu #beforeMenu="matMenu" xPosition="before">
                 <button mat-menu-item>
-                  <mat-icon>dialpad</mat-icon>
-                  <span>Redial</span>
-                </button>
-                <button mat-menu-item disabled>
-                  <mat-icon>voicemail</mat-icon>
-                  <span>Check voice mail</span>
+                  <span>option 1</span>
                 </button>
                 <button mat-menu-item>
-                  <mat-icon>notifications_off</mat-icon>
-                  <span>Disable alerts</span>
+                  <span>option 2</span>
+                </button>
+                <button mat-menu-item>
+                  <span>option 3</span>
+                </button>
+                <button mat-menu-item>
+                  <span>option 4</span>
                 </button>
               </mat-menu>
              </ng-container>
@@ -62,13 +62,8 @@
         </div>
 
         <div style="width: 30%;" >
-          <div style="display: flex;justify-content: center;">
-           <ng-container *ngIf="isMobileView">
-            <button type="button" mat-icon-button (click)="sideNav.toggle()">
-              <mat-icon >menu</mat-icon>
-            </button>
-           </ng-container>
-           <ng-container *ngIf="!isMobileView">
+          <div style="display: flex;justify-content: center;margin-top: 10px;">
+           <div style="display: flex;margin-top: 20px;">
             <div>
               <mat-icon style="position: relative;top: 10px;font-size: 28px;right: 15px;">person</mat-icon>
             </div>
@@ -80,10 +75,12 @@
               <div class="freetrailbutton">
                 Free Trial
               </div>
-              <!-- <button type="button" mat-icon-button style="padding: 35px 50px !important" style="background-color: #2D8249;color: white;">
-                Free Trial
-              </button> -->
             </div>
+           </div>
+           <ng-container *ngIf="isMobileView">
+            <button style="margin: 20px 9px;" type="button" mat-icon-button (click)="sideNav.toggle()">
+              <mat-icon >menu</mat-icon>
+            </button>
            </ng-container>
           </div>
         </div>
@@ -96,12 +93,12 @@
            <div style="margin: 20px;">
               <div style="margin-top: 20px;margin-bottom: 20px;">
                 <h1 style="text-align: center;">
-                  <span style="color: red;">100%</span>
+                  <span style="color: red;"> 100% </span>
                   <span style="color: #042D60;">d’efficacité, </span>
-                  <span style="color: red;">0%</span>
-                  <span style="color: #042D60;">de perte</span><br>
+                  <span style="color: red;"> 0% </span>
+                  <span style="color: #042D60;"> de perte </span><br>
                   <span style="color: #042D60;"> de temps avec </span>
-                  <span style="font-weight: 900;color: red;">Planning&Me</span>
+                  <span style="font-weight: 900;color: red;"> Planning&Me </span>
                 </h1>
               </div>
               <div class="mt-mb-4" style="text-align: center;font-size: 18px !important;">
@@ -154,13 +151,13 @@
         </div>
        </div>
     <!-- section 3  -->
-    <div class="row m-4 justify-content-center">
+    <div class="row m-4 justify-content-center  my-5">
       <div class="col-10 col-md-8 col-sm-10 col-lg-4 col-xl-4">
         <div style="display: flex;">
             <img src="../assets/athletics.svg" alt="">
         </div>
-        <p style="font-size: 16px;font-weight: 500 ;">Manage Smartly</p>
-        <p style="font-size: 12px;">
+        <p style="font-size: 16px;font-weight: 700 ;">Manage Smartly</p>
+        <p style="font-size: 14px;color: gray;">
           Stay on top of your task lists and stay <br>
           in touch with what's happening
         </p>
@@ -169,8 +166,8 @@
         <div style="display: flex;">
             <img src="../assets/archery-target.svg" alt="">
         </div>
-        <p style="font-size: 16px;font-weight: 500 ;">Communicate Fast</p>
-        <p style="font-size: 12px;">
+        <p style="font-size: 16px;font-weight: 700 ;">Communicate Fast</p>
+        <p style="font-size: 14px;color: gray;">
           Stay on top of your task lists and stay <br>
           in touch with what's happening
       </div>
@@ -178,29 +175,29 @@
         <div style="display: flex;">
             <img src="../assets/money-coins.svg" alt="">
         </div>
-        <p style="font-size: 16px;font-weight: 500 ;">Influence Easily</p>
-        <p style="font-size: 12px;">
+        <p style="font-size: 16px;font-weight: 700 ;">Influence Easily</p>
+        <p style="font-size: 14px;color: gray;">
           Stay on top of your task lists and stay <br>
           in touch with what's happening
         </p>
       </div>
      </div>
      <!-- section 4  -->
-       <div class="row m-4 justify-content-center">
-        <div class="col-10 col-md-8 col-sm-10 col-lg-4 col-xl-4">
-          <div style="display: flex;">
+       <div class="row mt-4 mb-4 justify-content-center  my-5">
+        <div class="col-10 col-md-8 col-sm-10 col-lg-4 col-xl-4 ">
+          <div style="display: flex;margin-bottom: 20px;">
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
           </div>
-          <p>Simply the best. Better than all the <br>
+          <p style="font-size: 18px;">Simply the best. Better than all the <br>
             rest. I’d recommend their service to <br>
              beginners and advanced users.</p>
              <div class="row mt-4">
               <div class="col-2">
-                <img src="../assets/person-2.jpeg" style="width: 50px;height: 50px;border-radius: 50%;" alt="">
+                <img src="../assets/person-2.jpeg" style="width: 50px;height: 50px;border-radius: 50%;object-fit: contain;" alt="">
               </div>
               <div class="col-10">
                 <span style="font-weight: 800;font-size: 16px;">Mariano Rasgado</span><br>
@@ -208,20 +205,20 @@
               </div>
              </div>
         </div>
-        <div class="col-10 col-md-8 col-sm-10 col-lg-4 col-xl-4">
-          <div style="display: flex;">
+        <div class="col-10 col-md-8 col-sm-10 col-lg-4 col-xl-4 ">
+          <div style="display: flex;margin-bottom: 20px;">
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
           </div>
-          <p>Simply the best. Better than all the <br>
+          <p style="font-size: 18px;">Simply the best. Better than all the <br>
             rest. I’d recommend their service to <br>
              beginners and advanced users.</p>
              <div class="row mt-4">
               <div class="col-2">
-                <img src="../assets/person-2.jpeg" style="width: 50px;height: 50px;border-radius: 50%;" alt="">
+                <img src="../assets/person-2.jpeg" style="width: 50px;height: 50px;border-radius: 50%;object-fit: contain;" alt="">
               </div>
               <div class="col-10">
                 <span style="font-weight: 800;font-size: 16px;">Mariano Rasgado</span><br>
@@ -229,20 +226,20 @@
               </div>
              </div>
         </div>
-        <div class="col-10 col-md-8 col-sm-10 col-lg-4 col-xl-4">
-          <div style="display: flex;">
+        <div class="col-10 col-md-8 col-sm-10 col-lg-4 col-xl-4 ">
+          <div style="display: flex;margin-bottom: 20px;">
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
             <mat-icon style="color: #FF971D;">star</mat-icon>
           </div>
-          <p>Simply the best. Better than all the <br>
+          <p style="font-size: 18px;">Simply the best. Better than all the <br>
             rest. I’d recommend their service to <br>
              beginners and advanced users.</p>
              <div class="row mt-4">
               <div class="col-2">
-                <img src="../assets/person-1.jpeg" style="width: 50px;height: 50px;border-radius: 50%;" alt="">
+                <img src="../assets/person-2.jpeg" style="width: 50px;height: 50px;border-radius: 50%;object-fit: contain;" alt="">
               </div>
               <div class="col-10">
                 <span style="font-weight: 800;font-size: 16px;">Mariano Rasgado</span><br>
@@ -251,6 +248,31 @@
              </div>
         </div>
        </div>
+
+
+       <!-- section 5  -->
+
+       <div class="container text-center my-5">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h2 class="stat-number text-primary">15M</h2>
+            <p class="stat-text">New visitors every month.</p>
+          </div>
+          <div class="col-md-3 col-6">
+            <h2 class="stat-number text-danger">49%</h2>
+            <p class="stat-text">Extra conversion on any niche.</p>
+          </div>
+          <div class="col-md-3 col-6">
+            <h2 class="stat-number text-success">$2M</h2>
+            <p class="stat-text">Extra saved by customers.</p>
+          </div>
+          <div class="col-md-3 col-6">
+            <h2 class="stat-number text-warning">93%</h2>
+            <p class="stat-text">Success rate in the last 5 years.</p>
+          </div>
+        </div>
+      </div>
+      
 
 
        <!-- footer  -->
@@ -310,7 +332,7 @@
               <mat-icon>schedule</mat-icon> 7 Days - 8am - 10pm
             </p>
             <p>
-              <mat-icon>email</mat-icon> info@medcartel.com
+              <mat-icon>email</mat-icon> info&#64;medcartel.com
             </p>
           </div>
         </div>
